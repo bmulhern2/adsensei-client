@@ -1,0 +1,46 @@
+<app-header></app-header>
+<mat-card>
+    <mat-card-title>
+        <h1>Documentation</h1>
+    </mat-card-title>
+    <mat-card-subtitle>
+        <p>AdSensei is an Application Programming Interface (API) that allows for the storage of media files on a server. This is perfect if your website or mobile application needs media files such as mp3 or mp4 files. All one needs to do is to hit the right enpoints with the token in the headers and your able to store your media files!</p>
+    </mat-card-subtitle>
+    <mat-card-content>
+        <mat-accordion>
+            <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false">
+                    <mat-expansion-panel-header>
+                        <p>Endpoints:</p>
+                    </mat-expansion-panel-header>
+                    <mat-panel-description>
+                        To Get All Files: 'https://adsensei.herokuapp.com/api/file/get/download/:email'
+                    </mat-panel-description>
+                    <mat-panel-description>
+                        To Post A Files: 'https://adsensei.herokuapp.com/api/file/get/upload/:email'
+                    </mat-panel-description>
+                    <mat-panel-description>
+                        To Edit A File: 'https://adsensei.herokuapp.com/api/file/edit/:email/:id'
+                    </mat-panel-description>
+                    <mat-panel-description>
+                        To Delete A Files: 'https://adsensei.herokuapp.com/api/file/get/delete/:email/:id'
+                    </mat-panel-description>
+                </mat-expansion-panel>
+                <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false">
+                    <mat-expansion-panel-header>
+                        <p>Authentication with the API Key:</p>
+                    </mat-expansion-panel-header>
+                    <mat-panel-title>
+                        Make sure your API Key is in the headers portion of the http requests as 'token'.
+                    </mat-panel-title>
+                </mat-expansion-panel>
+                <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false">
+                    <mat-expansion-panel-header>
+                        <p>Rules:</p>
+                    </mat-expansion-panel-header>
+                    <mat-panel-title>
+                        Please obey all laws with media content or account deletion will occur.
+                    </mat-panel-title>
+                </mat-expansion-panel>
+            </mat-accordion>
+    </mat-card-content>
+</mat-card>

@@ -1,0 +1,10 @@
+* {
+    margin: 0;
+    text-align: center;
+} mat-card {
+    height: 100%;
+} mat-card-content {
+    margin-top: 5%;
+} h1 {
+    margin-top: 20%;
+}

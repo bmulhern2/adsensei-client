@@ -1,0 +1,27 @@
+<app-header></app-header>
+<mat-card>
+    <mat-card-title>
+        <h1>Billing</h1>
+    </mat-card-title>
+    <mat-card-content>
+        <h2>Amount Due</h2>
+        <h2>${{ count * 0.01 }}</h2>
+    </mat-card-content>
+    <mat-card-content>
+        <form id="form">
+            <h1>Pay Bill</h1>
+            <input class="second form-control" type="text" placeholder="Name"/>
+            <br />
+            <input class="second form-control" type="text" placeholder="Card Number" />
+            <br />
+            <div class="form-group">
+            <input class="third" type='text' placeholder="CVC" style="color:black;" />
+            <input class="third" type="text" placeholder="Month" style="color:black;" />
+            <input class="third" type="text" placeholder="Year" style="color:black;" />
+            <br />
+            </div>
+            <script src="https://js.stripe.com/v3/"></script>
+            <button class="btn btn-success" (click)="buy()">Pay</button>
+        </form>
+    </mat-card-content>
+</mat-card>

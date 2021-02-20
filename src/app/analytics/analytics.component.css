@@ -1,0 +1,15 @@
+* {
+    margin: 0;
+    text-align: center;
+} mat-card {
+    height: 100%;
+} #box, table {
+    text-align: center;
+} #row1 {
+    display: flex;
+    margin-left: 17%;
+} .mat-sort-header-container {
+    align-items: center;
+} mat-paginator {
+    align-items: center;
+}

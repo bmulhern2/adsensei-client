@@ -1,0 +1,10 @@
+* {
+    margin: 0;
+    text-align: center;
+} mat-card {
+    height: 100%;
+} mat-card-content {
+    margin-top: 150px;
+} mat-card-subtitle {
+    margin-top: 50px;
+}
